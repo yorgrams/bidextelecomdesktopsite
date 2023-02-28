@@ -1,0 +1,1186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: white;
+    width: 100%;
+    height:auto;
+    color: black;
+}
+
+.nav{
+    background-color: rgb(4, 4, 80);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+.nav .label{
+    margin-top: 25px;
+}
+
+.nav label:hover{
+    color: orange;
+}
+
+.nav label{
+    text-align: left;
+    /*font-weight: bold;*/
+    letter-spacing: 1px;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    margin-top: 0px;
+    padding-left: 55px;
+    top: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav .ulbutton{
+    margin-top: -45.4px;
+}
+
+.nav ul{
+    float: right;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav li{
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 28px;
+    letter-spacing: 1px;
+    padding-top: 14px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: orange;
+    transition: 0.5s;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+}
+
+.nav li a:hover{
+    color: orange;
+    transition: 0.5s;
+}
+
+/*.active, .nav li:hover{
+    border: 1px solid orange;
+    border-radius: 5px;
+}*/
+
+.nav li:hover::after{
+    width: 70%;
+}
+
+.nav .fa{
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.nav button{
+    background-color: transparent;
+    width: 120px;
+    height: 30px;
+    color: white;
+    border: 1px solid white;
+    font-family: monospace;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 35.5px;
+    margin-right: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav button:hover{
+    border: 1px solid black/*#f44336*/;
+    background-color: orangered;
+    /*color: black;*/
+    outline: none;
+    text-decoration-line: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+/*DESIGN OF MENU COMPLETE, DESIGN ABOVE IS FOR MENU ONLY I.E NAVIGATION SIDES*/
+
+.firstpage1{
+    width: 100%;
+    height: auto;
+    background-image: url("images/minmin.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 55px;
+    min-height: 89vh;
+    margin-top: 90px;
+    float: left;
+    color: white;
+}
+
+.firstpage1 h1{
+    margin-top: 135px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    float: left;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.firstpage1 b{
+    color: orangered;
+    font-size: 40px;
+}
+
+/*.firstpage1 h1:last-child {
+    color:rgb(4, 4, 80);
+}*/
+
+/*.firstpage1 h1::selection{
+    color: rgb(3, 3, 34);
+}*/
+
+.firstpage1 p{
+    float: left;
+    width: 60%;
+    /*word-spacing: 1px;*/
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.firstpage1 .buttonls{
+    float: left;
+    width: 100%;
+}
+
+.firstpage1 .buttonls button{
+    text-align: center;
+    height: 35px;
+    width: 130px;
+    color: black;
+    margin-top: 35px;
+    border: 1px solid black;
+    margin-right: 35px;
+    border-radius: 5px;
+    position: initial;
+    letter-spacing: 1px;
+}
+
+.firstpage1 .buttonls button a{
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.firstpage1 .buttonls button:hover{
+    background-color: rgb(4, 4, 80);
+    border:1px solid rgb(4, 4, 80);
+    transition: 0.5s;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.firstpage1 .buttonls .fa{
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+/* FOR SMALLER SCREEN ON MOBILE PHONES*/
+@media(max-width: 720px) {
+    .firstpage1 h1{
+        margin-top: 55px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        font-size: 19px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    
+    .firstpage1 b{
+        color: orangered;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .nav{
+        background-color: rgb(4, 4, 80);
+        position: absolute;
+        height: 50vh;
+        margin-top: 50px;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    .nav ul{
+        display: block;
+    }
+
+    .nav ul li{
+        text-align: left;
+    }
+
+    .nav ul li a{
+        text-align: left;
+        float: left;
+        font-size: 11.5px;
+        margin-top: 0;
+    }
+
+    .nav li::after{
+        content: '';
+        height: 1px;
+        width: 0;
+        background-color: orange;
+        transition: 0.5s;
+        position: absolute;
+        left: 0;
+        
+    }
+
+    .nav li::after:hover{
+        width: 20%;
+    }
+
+    .nav .label{
+        background-color: rgb(4, 4, 80);
+        height: 60px;
+        width: 200%;
+        margin-top: -50px;
+        overflow: hidden;
+    }
+    
+    .nav label:hover{
+        color: orange;
+    }
+    
+    .nav label{
+        text-align: left;
+        margin-left: -30px;
+        margin-top: 9px;
+        /*font-weight: bold;*/
+        letter-spacing: 1px;
+        color: white;
+        font-family: monospace;
+        font-size: 15px;
+        cursor: pointer;
+    }
+}
+
+/*LOGIN PAGE AT HOME SCREEN*/
+.form2{
+    width: 250px;
+    height: 170px;
+    float: right;
+    text-align: center;
+    margin-top: -375px;
+    border: 1px solid rgb(4, 4, 80);
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.form2 label{
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.form2 .welcome-back{
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.form2 label:hover{
+    color: orange;
+    transition: 0.5s;
+}
+
+.form2 input{
+    margin-bottom: 7px;
+    height: 22px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid rgb(4, 4, 80);
+    color: black;
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 12.5px;
+    text-indent: 5px;
+}
+
+.form2 input::placeholder{
+    text-align: center;
+}
+
+.form2 button{
+    border: 1px solid black;
+    color: white;
+    height: 22px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(4, 4, 80);
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.form2 button:hover{
+    background-color: orangered;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.form2 a{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(4, 4, 80);
+    font-family: monospace;
+    text-align: center;
+}
+
+.form2 a:hover{
+    text-decoration-line: underline;
+    color: blue;
+}
+
+
+
+/*ABOUT US SECTION*/
+.aboutme{
+    background-color: white;
+    min-height: 95vh;
+    width: 100%;
+    height: auto;
+}
+
+.aboutus{
+    text-align: center;
+    background-color: white;
+}
+
+.aboutus h2{
+    text-align: center;
+    float: left;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    width: 40%;
+    text-transform: uppercase;
+    font-family: monospace;
+    margin-left: 34px;
+}
+
+.aboutus p{
+    margin-left: 40px;
+    font-size: 17.5px;
+    width: 40%;
+    color: black;
+    line-height: 30px;
+    padding-left: 80px;
+    text-align: left;
+}
+
+.aboutus a{
+    color: blue;
+    font-family: monospace;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.aboutus a:hover{
+    text-decoration-line: underline;
+    color: blue;
+}
+
+.aboutus img{
+    height: 360px;
+    width: 640px;
+    border: none;
+    border-radius: 15px;
+    float: right;
+    margin-top: -320px;
+    padding-right: 120px;
+}
+
+.aboutus img:hover{
+    cursor: pointer;
+}
+
+.aboutusfeature{
+    background-color: white;
+    margin-top: 100px;
+    width: 100%;
+    padding: 120px;
+}
+
+.aboutusfeature .whymep p{
+    text-align: center;
+    font-size:23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+}
+
+.aboutus0{
+    display: flex;
+    float: center;
+    margin-bottom: 120px;
+    text-align: left;
+}
+
+.aboutus0 p{
+    margin-left: 20px;
+    line-height: 30px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.aboutus1{
+    border: 1px solid rgb(4, 4, 80);
+    width: 320px;
+    height: 290px;
+    color: black;
+    background-color: white;
+}
+
+.aboutus1 img{
+    width: 45px;
+    height: 45x;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.aboutus1 label{
+    margin-left: 21px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.aboutus1 p{
+    text-align: left;
+}
+
+.aboutus1:hover{
+    background-color: rgb(4, 4, 80);
+    transition: 0.5s;
+    color: white;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.aboutus2{
+    border: 1px solid rgb(4, 4, 80);
+    width: 320px;
+    height: 270px;
+    margin-left: 70px;
+    background-color: white;
+}
+
+.aboutus2 img{
+    width: 45px;
+    height: 45x;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.aboutus2 label{
+    margin-left: 21px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.aboutus2:hover{
+    background-color: rgb(4, 4, 80);
+    transition: 0.6s;
+    color: white;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.aboutus3{
+    border: 1px solid rgb(4, 4, 80)/*rgb(247, 241, 241)*/;
+    width: 320px;
+    height: 290px;
+    margin-left: 70px;
+    background-color: white;
+}
+
+.aboutus3 img{
+    width: 45px;
+    height: 45x;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.aboutus3 label{
+    margin-left: 21px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.aboutus3:hover{
+    background-color: rgb(4, 4, 80);
+    transition: 0.6s;
+    color: white;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+/*OUR SERVICE*/
+.service hr{
+    margin-top: -90px;
+}
+
+.service1{
+    background-color: white;
+    min-height: 95vh;
+    width: 100%;
+    height: auto;
+}
+
+.service1 .service2{
+    text-align: center;
+    margin-top: 90px;
+}
+
+.service1 .service2 h3{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+
+.service1 .service2 p{
+    font-size: 17.5px;
+    line-height: 30px;
+}
+
+.service1 .service3{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.service-2{
+    margin-left: 30px;
+}
+
+.service-3{
+    margin-left: 30px;
+}
+
+.service1 .service3 img{
+    width: 350px;
+    height: 200px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.service1 .service3 img:hover{
+    margin-top: -25px;
+    cursor: pointer;
+}
+
+.service1 .service3 label{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-right: 5px;
+}
+
+.service1 .service3 p{
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    line-height: 25px;
+    margin-left: -1px;
+    margin-right: 7px;
+    font-size: 15px;
+    color: black;
+}
+
+.service1 .service4{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.service1 .service4 img{
+    width: 350px;
+    height: 200px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.service1 .service4 label{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.service1 .service4 p{
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    line-height: 25px;
+    margin-left: -1px;
+    margin-right: 7px;
+    font-size: 15px;
+    color: black;
+}
+
+.service-5{
+    margin-left: 30px;
+}
+
+.service1 .service4 img:hover{
+    margin-top: -25px;
+    cursor: pointer;
+}
+
+/*DATA BUNDLES PRICES*/
+.dataprices{
+    margin-top: 60px;
+    margin-bottom: 150px;
+    width: 100%;
+    height: auto;
+}
+
+.dataprices .data{
+    text-align: center;
+}
+
+.dataprices .datablur p{
+    font-size: 12px;
+    color: grey;
+    font-family: monospace;
+}
+
+.dataprices .datamain p{
+    color: black;
+    font-family: monospace;
+    font-size: 19px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.dataprices .dataprices1{
+    display: flex;
+}
+
+/*WORKING ON DATA CARDS*/
+.dataprices .dataprices1{
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 70px;
+}
+
+.dataprices .dataprices1 .mtnlabel{
+    height: 85px;
+    width: 260px;
+    background-color: rgb(207, 194, 6);
+    text-align: center;
+    margin-right: 30px;
+    padding-top: 24px;
+    margin-left: 0;
+}
+
+.dataprices .dataprices1 .mtnprices label{
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.dataprices .dataprices1 .airtellabel{
+    height: 85px;
+    width: 260px;
+    background-color: red;
+    text-align: center;
+    margin-right: 30px;
+    padding-top: 24px;
+}
+
+.dataprices .dataprices1 .airtelprices label{
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.dataprices .dataprices1 .glolabel{
+    height: 85px;
+    width: 260px;
+    background-color: rgb(2, 80, 2);
+    text-align: center;
+    margin-right: 30px;
+    padding-top: 24px;
+}
+
+.dataprices .dataprices1 .gloprices label{
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.dataprices .dataprices1 .etisalatlabel{
+    height: 85px;
+    width: 260px;
+    background-color: rgba(0, 70, 37, 0.938);
+    text-align: center;
+    margin-left: 0;
+    padding-top: 24px;
+}
+
+.dataprices .dataprices1 .etisalatprices label{
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+
+.dataprices .dataprices1 .mtnimg img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: 4px solid white;
+    margin-left: 100px;
+    margin-top: -20px;
+}
+
+.dataprices .dataprices1 .airimg img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: 4px solid white;
+    margin-left: 100px;
+    margin-top: -20px;
+}
+
+.dataprices .dataprices1 .gloimg img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: 4px solid white;
+    margin-left: 100px;
+    margin-top: -20px;
+}
+
+.dataprices .dataprices1 .etiimg img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: 4px solid white;
+    margin-left: 100px;
+    margin-top: -20px;
+}
+
+/*DATA BUNDLE TABLE DESIGN*/
+.dataprices .dataprices1 table{
+    border-collapse: collapse;
+    font-family: monospace;
+    font-size: 13px;
+    font-weight: bold;
+    width: 260px;
+    margin-top: -4.3px;
+}
+.dataprices .dataprices1 td{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.dataprices .dataprices1 .mtnprices button{
+    background-color: rgb(207, 194, 6);
+    border: none;
+    outline: none;
+    color: white;
+    height: 30px;
+    width: 95px;
+    font-size: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    border-radius: 12px;
+    font-family: monospace;
+}
+
+.dataprices .dataprices1 .mtnprices button:hover{
+    background-color: rgb(182, 170, 3);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.dataprices .dataprices1 .airtelprices button{
+    background-color: red;
+    border: none;
+    outline: none;
+    color: white;
+    height: 30px;
+    width: 95px;
+    font-size: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    border-radius: 12px;
+    font-family: monospace;
+}
+
+.dataprices .dataprices1 .airtelprices button:hover{
+    background-color: rgb(185, 7, 7);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.dataprices .dataprices1 .gloprices button{
+    background-color: rgb(2, 80, 2);
+    border: none;
+    outline: none;
+    color: white;
+    height: 30px;
+    width: 95px;
+    font-size: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    border-radius: 12px;
+    font-family: monospace;
+}
+
+.dataprices .dataprices1 .gloprices button:hover{
+    background-color: rgb(1, 49, 1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.dataprices .dataprices1 .etisalatprices button{
+    background-color: rgba(0, 70, 37, 0.938);
+    border: none;
+    outline: none;
+    color: white;
+    height: 30px;
+    width: 95px;
+    font-size: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    border-radius: 12px;
+    font-family: monospace;
+}
+
+
+.dataprices .dataprices1 .etisalatprices button:hover{
+    background-color: rgba(2, 19, 11, 0.938);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+/*FREQUENT QUESTIONS*/
+.FAQs1{
+    background-color: white;
+    min-height: 95vh;
+    width: 100%;
+    height: auto;
+}
+
+.FAQs1 h4{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 90px;
+}
+
+.FAQs1 p{
+    text-align: center;
+    color: black;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+.FAQs1 table{
+    margin-left: 120px;
+    margin-bottom: 30px;
+}
+
+.FAQs .img{
+    height: 300px;
+    width: 550px;
+    border: none;
+    border-radius: 15px;
+    float: right;
+    margin-top: -690px;
+    margin-right: 10px;
+    padding-right: 120px;
+}
+
+.FAQs1 table th{
+    font-size: 17px;
+    font-family: monospace;
+    letter-spacing: 1px;
+    text-align: left;
+    float: left;
+    margin-bottom: 3px;
+    width: 100%;
+    text-transform: uppercase;
+    margin-top: 17px;
+}
+
+.FAQs1 table td{
+    width: 580px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.FAQs1 table td i{
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: blue;
+    font-size: 13.5px;
+}
+
+.FAQs1 table td a{
+    text-decoration: underline;
+    color: blue;
+    font-size: 12.9px;
+    letter-spacing: 1px;
+}
+
+.FAQs1 table td a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/*CUSTOMER SERVICE*/
+.FAQs .cus-icon{
+    width: 100%;
+    height: 0;
+    margin-bottom: 0;
+}
+
+.FAQs .cus-icon img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    float: right;
+    margin-top: -105px;
+    outline: 1px solid rgb(4, 4, 80);
+    box-shadow: 5px;
+    margin-right: 30px;
+    padding-left: 2px;
+    padding-right: 1px;
+}
+
+.FAQs .cus-icon img:hover{
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+}
+
+
+/*FOOTER DESIGN*/
+.footme{
+    background-color: rgb(4, 4, 80);
+    width: 100%;
+    height: 120px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 0;
+    position: absolute;
+}
+
+.footme a{
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}
+
+.footme .footer{
+    margin-left: 25px;
+}
+
+.footme .hfooter{
+    font-family: monospace;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.footme .hfooter h5{
+    margin-right: 80px;
+    margin-left: 80px;
+    font-size: 13.5px;
+    letter-spacing: 1px;
+    display: inline-flex;
+}
+
+/*
+.footme .hfooter h5,p{
+    display: inline-flex;
+}*/
+
+.footme .hfooter p{
+    margin-left: 4px;
+    color: orange;
+    display: inline-flex;
+}
+
+.footme .hfooter p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footme .hfooter h6{
+    margin-right: 80px;
+    margin-left: 80px;
+    font-size: 13.5px;
+    letter-spacing: 1px;
+    margin-top: -8px;
+}
+
+.footme .hfooter h6 a{
+    color: orange;
+}
+
+.footme .hfooter h6 a:hover{
+    text-decoration: underline;
+}
+
+.footme .afooter{
+    font-family: monospace;
+    font-size: 14px;
+    text-transform: lowercase;
+    font-weight: normal;
+    display: inline-flex;
+    margin-top: -4px;
+}
+
+.footme .afooter h5,h6{
+    text-align: center;
+    margin-right: 85px;
+    margin-left: 108px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 13.5px;
+    letter-spacing: 1px;
+}
+
+.footme .afooter h6{
+    font-size: 13px;
+}
+
+.footme .afooter a{
+    color: orange;
+}
+
+.footme .afooter h5 a:hover{
+    text-decoration: underline;
+}
+
+.footme .afooter h6 a:hover{
+    text-decoration: underline;
+}
+
+.footme .socialmedia{
+    margin-right: 380px;
+    display: inline-flex;
+}
+
+.footme .socialmedia img{
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.footme .socialmedia .insta img{
+    width: 42px;
+    height: 27px;
+    margin-top: -3px;
+    margin-left: -3px;
+}
+
+.footme hr{
+    margin-top: -5px;
+    outline: none;
+}
+
+.footme .p{
+    color: white;
+    font-family: monospace;
+    font-size: 9px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.footme .p a{
+    margin-top: 0;
+    margin-left: 4px;
+    text-decoration: none;
+    color: orange;
+    letter-spacing: 1px;
+}
+
+.footme .p a:hover{
+    text-decoration: underline;
+}
